@@ -8,22 +8,26 @@
           "type": "address"
         }
       ],
-      "stateMutability": "payable",
+      "stateMutability": "nonpayable",
       "type": "constructor"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
     }
   ],
   "bytecode": {
-    "object": "0x608060405260405160ee38038060ee833981016040819052601e916074565b806001600160a01b03166352e4db146040518163ffffffff1660e01b8152600401600060405180830381600087803b158015605857600080fd5b505af1158015606b573d6000803e3d6000fd5b505050505060a2565b600060208284031215608557600080fd5b81516001600160a01b0381168114609b57600080fd5b9392505050565b603f8060af6000396000f3fe6080604052600080fdfea2646970667358221220e48b06ffce9b15cc952b16de348c74fd7e600a94ec005340895bac4c3946b02c64736f6c63430008110033",
-    "sourceMap": "58:432:8:-:0;;;408:77;;;;;;;;;;;;;;;;;;:::i;:::-;456:4;-1:-1:-1;;;;;456:19:8;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;408:77;58:432;;14:311:11;105:6;158:2;146:9;137:7;133:23;129:32;126:52;;;174:1;171;164:12;126:52;200:16;;-1:-1:-1;;;;;245:31:11;;235:42;;225:70;;291:1;288;281:12;225:70;314:5;14:311;-1:-1:-1;;;14:311:11:o;:::-;58:432:8;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b5060405161010b38038061010b83398101604081905261002f91610088565b806001600160a01b03166352e4db146040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561006a57600080fd5b505af115801561007e573d6000803e3d6000fd5b50505050506100b8565b60006020828403121561009a57600080fd5b81516001600160a01b03811681146100b157600080fd5b9392505050565b6045806100c66000396000f3fe608060405236600a57005b600080fdfea26469706673582212204c8c5931b0d22fef504e68add6878719885861d92c839b4fefdfe7d3d701005b64736f6c63430008110033",
+    "sourceMap": "58:465:7:-:0;;;408:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;448:4;-1:-1:-1;;;;;448:19:7;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;408:69;58:465;;14:311:10;105:6;158:2;146:9;137:7;133:23;129:32;126:52;;;174:1;171;164:12;126:52;200:16;;-1:-1:-1;;;;;245:31:10;;235:42;;225:70;;291:1;288;281:12;225:70;314:5;14:311;-1:-1:-1;;;14:311:10:o;:::-;58:465:7;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052600080fdfea2646970667358221220e48b06ffce9b15cc952b16de348c74fd7e600a94ec005340895bac4c3946b02c64736f6c63430008110033",
-    "sourceMap": "58:432:8:-:0;;;;;",
+    "object": "0x608060405236600a57005b600080fdfea26469706673582212204c8c5931b0d22fef504e68add6878719885861d92c839b4fefdfe7d3d701005b64736f6c63430008110033",
+    "sourceMap": "58:465:7:-:0;;;;;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract CallMeMaybe\",\"name\":\"addr\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Attacker.sol\":\"Attacker\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Attacker.sol\":{\"keccak256\":\"0x138fafdc490572945412ecc1b53b8727774e7025104191ede8c52ee292e60cd6\",\"urls\":[\"bzz-raw://bdcf3be7feb98549b1e7cf3000c1236c6094528634ff3cc72813220ebc9bc53f\",\"dweb:/ipfs/Qmag4hDRVniNJPw6HoEkeD4FeyTwzeawtbmqJvUdGADnnZ\"]},\"src/CallMeMaybe.sol\":{\"keccak256\":\"0xb46f5b6783cb6535eed00a6dbdc5a9ad63e8790e373fa72c6d674df29f456c0d\",\"urls\":[\"bzz-raw://6fd6420d5e3b71e604abdd15faa1a7f46f9aeb5a2780706f3d1b83c39a17b690\",\"dweb:/ipfs/QmPUmMoNetakEUTQYotxodwmU2oszLNY4PHarpx6mH3ps6\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract CallMeMaybe\",\"name\":\"addr\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Attacker.sol\":\"Attacker\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Attacker.sol\":{\"keccak256\":\"0x8381f5fede4730156a79a64482a9f08a67571f17f0685c2eda1f1a0da09a1011\",\"urls\":[\"bzz-raw://1fdb262abd3680f050484fe5a761b56869cccb1338ed920cbbd914b0d431b69f\",\"dweb:/ipfs/QmbKg5T8YnsHaS6mX7uK2H3RY9MRBjoHiDEnKA4oQbgmob\"]},\"src/CallMeMaybe.sol\":{\"keccak256\":\"0xb46f5b6783cb6535eed00a6dbdc5a9ad63e8790e373fa72c6d674df29f456c0d\",\"urls\":[\"bzz-raw://6fd6420d5e3b71e604abdd15faa1a7f46f9aeb5a2780706f3d1b83c39a17b690\",\"dweb:/ipfs/QmPUmMoNetakEUTQYotxodwmU2oszLNY4PHarpx6mH3ps6\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.17+commit.8df45f5f"
@@ -39,8 +43,13 @@
               "type": "address"
             }
           ],
-          "stateMutability": "payable",
+          "stateMutability": "nonpayable",
           "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
         }
       ],
       "devdoc": {
@@ -73,10 +82,10 @@
     },
     "sources": {
       "src/Attacker.sol": {
-        "keccak256": "0x138fafdc490572945412ecc1b53b8727774e7025104191ede8c52ee292e60cd6",
+        "keccak256": "0x8381f5fede4730156a79a64482a9f08a67571f17f0685c2eda1f1a0da09a1011",
         "urls": [
-          "bzz-raw://bdcf3be7feb98549b1e7cf3000c1236c6094528634ff3cc72813220ebc9bc53f",
-          "dweb:/ipfs/Qmag4hDRVniNJPw6HoEkeD4FeyTwzeawtbmqJvUdGADnnZ"
+          "bzz-raw://1fdb262abd3680f050484fe5a761b56869cccb1338ed920cbbd914b0d431b69f",
+          "dweb:/ipfs/QmbKg5T8YnsHaS6mX7uK2H3RY9MRBjoHiDEnKA4oQbgmob"
         ],
         "license": null
       },
@@ -93,22 +102,22 @@
   },
   "ast": {
     "absolutePath": "src/Attacker.sol",
-    "id": 23262,
+    "id": 23247,
     "exportedSymbols": {
       "Attacker": [
-        23261
+        23246
       ],
       "CallMeMaybe": [
-        23319
+        23304
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "0:490:8",
+    "src": "0:523:7",
     "nodes": [
       {
-        "id": 23247,
+        "id": 23228,
         "nodeType": "PragmaDirective",
-        "src": "0:23:8",
+        "src": "0:23:7",
         "nodes": [],
         "literals": [
           "solidity",
@@ -118,32 +127,32 @@
         ]
       },
       {
-        "id": 23248,
+        "id": 23229,
         "nodeType": "ImportDirective",
-        "src": "27:27:8",
+        "src": "27:27:7",
         "nodes": [],
         "absolutePath": "src/CallMeMaybe.sol",
         "file": "./CallMeMaybe.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 23262,
-        "sourceUnit": 23320,
+        "scope": 23247,
+        "sourceUnit": 23305,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 23261,
+        "id": 23246,
         "nodeType": "ContractDefinition",
-        "src": "58:432:8",
+        "src": "58:465:7",
         "nodes": [
           {
-            "id": 23260,
+            "id": 23241,
             "nodeType": "FunctionDefinition",
-            "src": "408:77:8",
+            "src": "408:69:7",
             "nodes": [],
             "body": {
-              "id": 23259,
+              "id": 23240,
               "nodeType": "Block",
-              "src": "445:40:8",
+              "src": "437:40:7",
               "nodes": [],
               "statements": [
                 {
@@ -152,33 +161,33 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 23254,
+                        "id": 23235,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 23251,
-                        "src": "456:4:8",
+                        "referencedDeclaration": 23232,
+                        "src": "448:4:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_CallMeMaybe_$23319",
+                          "typeIdentifier": "t_contract$_CallMeMaybe_$23304",
                           "typeString": "contract CallMeMaybe"
                         }
                       },
-                      "id": 23256,
+                      "id": 23237,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "461:14:8",
+                      "memberLocation": "453:14:7",
                       "memberName": "hereIsMyNumber",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 23314,
-                      "src": "456:19:8",
+                      "referencedDeclaration": 23299,
+                      "src": "448:19:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                         "typeString": "function () external"
                       }
                     },
-                    "id": 23257,
+                    "id": 23238,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -187,16 +196,16 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "456:21:8",
+                    "src": "448:21:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 23258,
+                  "id": 23239,
                   "nodeType": "ExpressionStatement",
-                  "src": "456:21:8"
+                  "src": "448:21:7"
                 }
               ]
             },
@@ -206,59 +215,93 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 23252,
+              "id": 23233,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 23251,
+                  "id": 23232,
                   "mutability": "mutable",
                   "name": "addr",
-                  "nameLocation": "432:4:8",
+                  "nameLocation": "432:4:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 23260,
-                  "src": "420:16:8",
+                  "scope": 23241,
+                  "src": "420:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_CallMeMaybe_$23319",
+                    "typeIdentifier": "t_contract$_CallMeMaybe_$23304",
                     "typeString": "contract CallMeMaybe"
                   },
                   "typeName": {
-                    "id": 23250,
+                    "id": 23231,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 23249,
+                      "id": 23230,
                       "name": "CallMeMaybe",
                       "nameLocations": [
-                        "420:11:8"
+                        "420:11:7"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 23319,
-                      "src": "420:11:8"
+                      "referencedDeclaration": 23304,
+                      "src": "420:11:7"
                     },
-                    "referencedDeclaration": 23319,
-                    "src": "420:11:8",
+                    "referencedDeclaration": 23304,
+                    "src": "420:11:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_CallMeMaybe_$23319",
+                      "typeIdentifier": "t_contract$_CallMeMaybe_$23304",
                       "typeString": "contract CallMeMaybe"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "419:18:8"
+              "src": "419:18:7"
             },
             "returnParameters": {
-              "id": 23253,
+              "id": 23234,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "445:0:8"
+              "src": "437:0:7"
             },
-            "scope": 23261,
-            "stateMutability": "payable",
+            "scope": 23246,
+            "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
+          },
+          {
+            "id": 23245,
+            "nodeType": "FunctionDefinition",
+            "src": "489:29:7",
+            "nodes": [],
+            "body": {
+              "id": 23244,
+              "nodeType": "Block",
+              "src": "516:2:7",
+              "nodes": [],
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 23242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "496:2:7"
+            },
+            "returnParameters": {
+              "id": 23243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "516:0:7"
+            },
+            "scope": 23246,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
           }
         ],
         "abstract": false,
@@ -268,14 +311,14 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          23261
+          23246
         ],
         "name": "Attacker",
-        "nameLocation": "67:8:8",
-        "scope": 23262,
+        "nameLocation": "67:8:7",
+        "scope": 23247,
         "usedErrors": []
       }
     ]
   },
-  "id": 8
+  "id": 7
 }

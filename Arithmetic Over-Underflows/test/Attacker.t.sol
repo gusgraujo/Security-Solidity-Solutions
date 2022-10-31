@@ -5,15 +5,18 @@ import "../src/CallMeMaybe.sol";
 import "../src/Attacker.sol";
 
 contract AttackerTest is Test {
-    address public callMeMaybe;
+    CallMeMaybe callMeMaybe;
+    address public attacker;
 
     function setUp() public {
+        vm.startPrank(attacker);
         callMeMaybe = new CallMeMaybe();
-        vm.deal(callMeMaybe, 10 ether);
+        vm.deal(address(callMeMaybe), 10 ether);
+        callMeMaybe.hereIsMyNumber();
+        vm.stopPrank();
     }
 
     function testAttack() public {
-        Attacker attacker = new Attacker(address(callMeMaybe));
         assertEq(address(attacker).balance, 10 ether);
     }
 }

