@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.0;
 
 contract HowRandomIsRandom {
   Game[] public games;
@@ -13,7 +13,7 @@ contract HowRandomIsRandom {
   function spin(uint256 _bet) public payable {
     require(msg.value >= 0.01 ether);
     uint gameId = games.length;
-    games.push(Game(msg.sender, gameId, _bet, block.number));
+    games.push(Game(msg.sender, gameId, _bet, block.number-1));
     if (gameId > 0) {
       uint lastGameId = gameId - 1;
       uint num = rand(blockhash(games[lastGameId].blockNumber), 100);

@@ -1,9 +1,0 @@
-[submodule "Arithmetic Over-Underflows/lib/forge-std"]
-	path = Arithmetic Over-Underflows/lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
-[submodule "Functions have a personality too/lib/forge-std"]
-	path = Functions have a personality too/lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
-[submodule "HowRandomIsRandom/lib/forge-std"]
-	path = HowRandomIsRandom/lib/forge-std
-	url = https://github.com/foundry-rs/forge-std

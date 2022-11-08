@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "../lib/forge-std/Test.sol";
+import "../lib/forge-std/src/Test.sol";
 import "../src/Functions.sol";
 
 //call it 128 to jump where you want it
