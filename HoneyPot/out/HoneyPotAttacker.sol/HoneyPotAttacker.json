@@ -1,0 +1,616 @@
+{
+  "abi": [
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_honeypot",
+          "type": "address"
+        }
+      ],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610112806100206000396000f3fe60806040526004361060275760003560e01c806312065fe014602f578063d018db3e14604e57005b36602d57005b005b348015603a57600080fd5b504760405190815260200160405180910390f35b602d605936600460ae565b806001600160a01b0316633ccfd60b346040518263ffffffff1660e01b81526004016000604051808303818588803b158015609357600080fd5b505af115801560a6573d6000803e3d6000fd5b505050505050565b60006020828403121560bf57600080fd5b81356001600160a01b038116811460d557600080fd5b939250505056fea264697066735822122081aa107c0579fb5a30cf130b96506e210bd27896460e6ca685417e67930a082b64736f6c63430008110033",
+    "sourceMap": "55:349:15:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x60806040526004361060275760003560e01c806312065fe014602f578063d018db3e14604e57005b36602d57005b005b348015603a57600080fd5b504760405190815260200160405180910390f35b602d605936600460ae565b806001600160a01b0316633ccfd60b346040518263ffffffff1660e01b81526004016000604051808303818588803b158015609357600080fd5b505af115801560a6573d6000803e3d6000fd5b505050505050565b60006020828403121560bf57600080fd5b81356001600160a01b038116811460d557600080fd5b939250505056fea264697066735822122081aa107c0579fb5a30cf130b96506e210bd27896460e6ca685417e67930a082b64736f6c63430008110033",
+    "sourceMap": "55:349:15:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;224:98;;;;;;;;;;-1:-1:-1;293:21:15;224:98;;160:25:17;;;148:2;133:18;224:98:15;;;;;;;94:120;;;;;;:::i;:::-;166:9;-1:-1:-1;;;;;157:28:15;;194:9;157:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;94:120;:::o;196:286:17:-;255:6;308:2;296:9;287:7;283:23;279:32;276:52;;;324:1;321;314:12;276:52;350:23;;-1:-1:-1;;;;;402:31:17;;392:42;;382:70;;448:1;445;438:12;382:70;471:5;196:286;-1:-1:-1;;;196:286:17:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "attack(address)": "d018db3e",
+    "getBalance()": "12065fe0"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_honeypot\",\"type\":\"address\"}],\"name\":\"attack\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/HoneyPotAttacker.sol\":\"HoneyPotAttacker\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/HoneyPot.sol\":{\"keccak256\":\"0xa4fdb457bc177cb6bb46f7e85d66998e59b6ec52ad80958bf03adb227d32fa93\",\"urls\":[\"bzz-raw://9d10295a4466a89bececaf3f0403ce4ac8776304b8c61b67b0fdb46f7df2c9b4\",\"dweb:/ipfs/QmTcGb5ynWeTyKQKkXDHzZ3St2du3BWohg1DS3P6CfnfKP\"]},\"src/HoneyPotAttacker.sol\":{\"keccak256\":\"0x288d62cf910c6e8faf83725cdf0eec52ba0df51e3839d7def52a56f5b6ab1a60\",\"urls\":[\"bzz-raw://503f410cb710030830ccb0cf36e33ea1acd64235998a3fb7e91924155d2b7eff\",\"dweb:/ipfs/QmWq1hoTBDJ3j2AAATRAGqsViDEjFTCyzpAHGpqcbAh5hf\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "fallback"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_honeypot",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "attack"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getBalance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/HoneyPotAttacker.sol": "HoneyPotAttacker"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/HoneyPot.sol": {
+        "keccak256": "0xa4fdb457bc177cb6bb46f7e85d66998e59b6ec52ad80958bf03adb227d32fa93",
+        "urls": [
+          "bzz-raw://9d10295a4466a89bececaf3f0403ce4ac8776304b8c61b67b0fdb46f7df2c9b4",
+          "dweb:/ipfs/QmTcGb5ynWeTyKQKkXDHzZ3St2du3BWohg1DS3P6CfnfKP"
+        ],
+        "license": null
+      },
+      "src/HoneyPotAttacker.sol": {
+        "keccak256": "0x288d62cf910c6e8faf83725cdf0eec52ba0df51e3839d7def52a56f5b6ab1a60",
+        "urls": [
+          "bzz-raw://503f410cb710030830ccb0cf36e33ea1acd64235998a3fb7e91924155d2b7eff",
+          "dweb:/ipfs/QmWq1hoTBDJ3j2AAATRAGqsViDEjFTCyzpAHGpqcbAh5hf"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/HoneyPotAttacker.sol",
+    "id": 24490,
+    "exportedSymbols": {
+      "HoneyPot": [
+        24450
+      ],
+      "HoneyPotAttacker": [
+        24489
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "0:404:15",
+    "nodes": [
+      {
+        "id": 24452,
+        "nodeType": "PragmaDirective",
+        "src": "0:23:15",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 24453,
+        "nodeType": "ImportDirective",
+        "src": "27:24:15",
+        "nodes": [],
+        "absolutePath": "src/HoneyPot.sol",
+        "file": "./HoneyPot.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 24490,
+        "sourceUnit": 24451,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 24489,
+        "nodeType": "ContractDefinition",
+        "src": "55:349:15",
+        "nodes": [
+          {
+            "id": 24468,
+            "nodeType": "FunctionDefinition",
+            "src": "94:120:15",
+            "nodes": [],
+            "body": {
+              "id": 24467,
+              "nodeType": "Block",
+              "src": "146:68:15",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 24459,
+                              "name": "_honeypot",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 24455,
+                              "src": "166:9:15",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 24458,
+                            "name": "HoneyPot",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 24450,
+                            "src": "157:8:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_HoneyPot_$24450_$",
+                              "typeString": "type(contract HoneyPot)"
+                            }
+                          },
+                          "id": 24460,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "157:19:15",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_HoneyPot_$24450",
+                            "typeString": "contract HoneyPot"
+                          }
+                        },
+                        "id": 24461,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "177:8:15",
+                        "memberName": "withdraw",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 24449,
+                        "src": "157:28:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_payable$__$returns$__$",
+                          "typeString": "function () payable external"
+                        }
+                      },
+                      "id": 24464,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "names": [
+                        "value"
+                      ],
+                      "nodeType": "FunctionCallOptions",
+                      "options": [
+                        {
+                          "expression": {
+                            "id": 24462,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "194:3:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 24463,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "198:5:15",
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "src": "194:9:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "src": "157:47:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$__$returns$__$value",
+                        "typeString": "function () payable external"
+                      }
+                    },
+                    "id": 24465,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "157:49:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24466,
+                  "nodeType": "ExpressionStatement",
+                  "src": "157:49:15"
+                }
+              ]
+            },
+            "functionSelector": "d018db3e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "103:6:15",
+            "parameters": {
+              "id": 24456,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24455,
+                  "mutability": "mutable",
+                  "name": "_honeypot",
+                  "nameLocation": "118:9:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24468,
+                  "src": "110:17:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 24454,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "110:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "109:19:15"
+            },
+            "returnParameters": {
+              "id": 24457,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "146:0:15"
+            },
+            "scope": 24489,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24480,
+            "nodeType": "FunctionDefinition",
+            "src": "224:98:15",
+            "nodes": [],
+            "body": {
+              "id": 24479,
+              "nodeType": "Block",
+              "src": "275:47:15",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 24475,
+                          "name": "this",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -28,
+                          "src": "301:4:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_HoneyPotAttacker_$24489",
+                            "typeString": "contract HoneyPotAttacker"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_HoneyPotAttacker_$24489",
+                            "typeString": "contract HoneyPotAttacker"
+                          }
+                        ],
+                        "id": 24474,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "293:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 24473,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "293:7:15",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 24476,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "293:13:15",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 24477,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "307:7:15",
+                    "memberName": "balance",
+                    "nodeType": "MemberAccess",
+                    "src": "293:21:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 24472,
+                  "id": 24478,
+                  "nodeType": "Return",
+                  "src": "286:28:15"
+                }
+              ]
+            },
+            "functionSelector": "12065fe0",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBalance",
+            "nameLocation": "233:10:15",
+            "parameters": {
+              "id": 24469,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "243:2:15"
+            },
+            "returnParameters": {
+              "id": 24472,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24471,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24480,
+                  "src": "269:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 24470,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "269:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "268:6:15"
+            },
+            "scope": 24489,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24484,
+            "nodeType": "FunctionDefinition",
+            "src": "332:32:15",
+            "nodes": [],
+            "body": {
+              "id": 24483,
+              "nodeType": "Block",
+              "src": "361:3:15",
+              "nodes": [],
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 24481,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "341:2:15"
+            },
+            "returnParameters": {
+              "id": 24482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "361:0:15"
+            },
+            "scope": 24489,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24488,
+            "nodeType": "FunctionDefinition",
+            "src": "372:29:15",
+            "nodes": [],
+            "body": {
+              "id": 24487,
+              "nodeType": "Block",
+              "src": "399:2:15",
+              "nodes": [],
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 24485,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:2:15"
+            },
+            "returnParameters": {
+              "id": 24486,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "399:0:15"
+            },
+            "scope": 24489,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "HoneyPotAttacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24489
+        ],
+        "name": "HoneyPotAttacker",
+        "nameLocation": "64:16:15",
+        "scope": 24490,
+        "usedErrors": []
+      }
+    ]
+  },
+  "id": 15
+}
