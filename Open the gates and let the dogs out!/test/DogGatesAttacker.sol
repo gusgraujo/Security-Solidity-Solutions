@@ -1,29 +1,25 @@
-
 pragma solidity ^0.6.0;
 
 
 import "../lib/forge-std/src/Test.sol";
-import "../src/DogGates.sol";
+import "../src/DogGatesAttacker.sol";
 
 
-contract DogGatesAttacker is Test{
+contract DogGatesAttackerTest is Test{
     DogGates private gate;
+    DogGatesAttacker attacker;
     address private owner = address(100);
 
     function setUp() public {
         gate = new DogGates();
+        attacker = new DogGatesAttacker();
     }
 
     function testDogGatesAttacker() public
     {
-        vm.startPrank(owner);
         // calculate the key needed to solve the third gate
-        bytes8 key = bytes8(uint64(uint160(address(owner)))) & 0xFFFFFFFF0000FFFF;
-        gate.enter{gas: 802929}(key);
-        
-        assertEq(gate.entrant(), owner);
+        attacker.hack(address(gate),1000,1000000);
 
-        vm.stopPrank();
     }
 
 }
