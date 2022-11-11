@@ -1,3 +1,9 @@
 [submodule "Become the Contract’s Owner/lib/forge-std"]
 	path = Become the Contract’s Owner/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "Sail Away!/lib/forge-std"]
+	path = Sail Away!/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Is it over/lib/forge-std"]
+	path = Is it over/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
