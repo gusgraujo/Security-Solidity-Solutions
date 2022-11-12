@@ -21,7 +21,6 @@ contract VaultTest is Test {
     function testAttack() public {
         vm.startPrank(player);
         functions.breakIt{value: 128}();
-
         assertEq(address(functions).balance, 0);
         assertEq(player.balance,11 ether);
         vm.stopPrank();

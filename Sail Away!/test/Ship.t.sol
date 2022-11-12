@@ -26,7 +26,7 @@ contract ShipTest is Test {
 
             The SELFDESTRUCT will result in a new logic to the anchor contract
         */
-        nav.pullAnchor();// This function will trigger the selfdestruct and allow to pull the anchor
+        nav.pullAnchor();// This function will trigger the selfdestruct and allow to pull the anchor, and then all that is left is call the sailAway
         nav.sailAway();
     }
 }
