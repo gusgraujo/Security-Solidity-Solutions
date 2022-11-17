@@ -13,11 +13,12 @@ contract FlashBankTest is FlashBankFixture {
         // Start acting as the attacker for the remainder of the exploit
         vm.startPrank(attacker);
 
-        /**
-         * Code your exploit here
-         */
+        console.log(address(pool).balance);
+        pool.flashLoan(1000);
+        console.log(address(pool).balance);
 
-        // Stop acting as the attacker
+
+
         vm.stopPrank();
         // Perform exploit validations
         _assertions();
@@ -29,3 +30,5 @@ contract FlashBankTest is FlashBankFixture {
         assertGt(attacker.balance, ATTACKER_INITIAL_BALANCE);
     }
 }
+
+

@@ -3544,8 +3544,8 @@
       }
     },
     "src/src-default/flash-bank/FlashBankLenderPool.sol": {
-      "lastModificationDate": 1668435147846,
-      "contentHash": "ed1c90cf9ba0fbff14b032ff07d908c6",
+      "lastModificationDate": 1668616358750,
+      "contentHash": "64e21084a0c7bd3cc3e0394985a76e94",
       "sourceName": "src/src-default/flash-bank/FlashBankLenderPool.sol",
       "solcConfig": {
         "settings": {
@@ -3576,6 +3576,20 @@
         }
       },
       "imports": [
+        "lib/forge-std/lib/ds-test/src\\test.sol",
+        "lib/forge-std/src/Common.sol",
+        "lib/forge-std/src/Components.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src\\Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
         "lib/openzeppelin-contracts\\contracts/utils/Address.sol"
       ],
       "versionRequirement": "^0.8.0",
@@ -4363,8 +4377,8 @@
       }
     },
     "test/clueless/Clueless.t.sol": {
-      "lastModificationDate": 1668611315828,
-      "contentHash": "050032eec2aa2e1ef796b4e0ba2e4efb",
+      "lastModificationDate": 1668611578709,
+      "contentHash": "0d2096e78460f422015b33cac11848e1",
       "sourceName": "test/clueless/Clueless.t.sol",
       "solcConfig": {
         "settings": {
@@ -4647,8 +4661,8 @@
       }
     },
     "test/flash-bank/FlashBank.t.sol": {
-      "lastModificationDate": 1668435147866,
-      "contentHash": "ee40827d033688b7b601d0f1a1e932eb",
+      "lastModificationDate": 1668616913173,
+      "contentHash": "4b3ea58012f913c9975d03bed80b0184",
       "sourceName": "test/flash-bank/FlashBank.t.sol",
       "solcConfig": {
         "settings": {
@@ -4889,8 +4903,8 @@
       }
     },
     "test/free/Free.t.sol": {
-      "lastModificationDate": 1668435147866,
-      "contentHash": "297a2e389f21e42f5c816e99ef3b74c4",
+      "lastModificationDate": 1668621283041,
+      "contentHash": "43d89d9df51eedb40db9a06bbbd2bfa5",
       "sourceName": "test/free/Free.t.sol",
       "solcConfig": {
         "settings": {

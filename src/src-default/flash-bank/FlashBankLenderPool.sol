@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/Address.sol";
+import "forge-std/Test.sol";
 
 interface IFlashLoanEtherReceiver {
     function execute() external payable;
@@ -24,6 +25,7 @@ contract FlashBankLenderPool {
 
     function flashLoan(uint256 amount) external {
         uint256 balanceBefore = address(this).balance;
+        console.log(balanceBefore);
         require(balanceBefore >= amount, "Not enough ETH in balance");
         
         IFlashLoanEtherReceiver(msg.sender).execute{value: amount}();

