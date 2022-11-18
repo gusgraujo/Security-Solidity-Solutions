@@ -25,7 +25,6 @@ contract FlashBankLenderPool {
 
     function flashLoan(uint256 amount) external {
         uint256 balanceBefore = address(this).balance;
-        console.log(balanceBefore);
         require(balanceBefore >= amount, "Not enough ETH in balance");
         
         IFlashLoanEtherReceiver(msg.sender).execute{value: amount}();
@@ -33,4 +32,3 @@ contract FlashBankLenderPool {
         require(address(this).balance >= balanceBefore, "Flash loan hasn't been paid back");        
     }
 }
- 

