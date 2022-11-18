@@ -17,9 +17,7 @@ contract DogGatesAttackerTest is Test{
 
     function testDogGatesAttacker() public
     {
-        // calculate the key needed to solve the third gate
         attacker.hack(address(gate),1000,1000000);
-        //assertEq(gate.entrant, address(attacker));
     }
 
 }
