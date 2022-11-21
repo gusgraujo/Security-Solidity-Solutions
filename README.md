@@ -49,7 +49,7 @@ This repository are made for Study cases of smart contracts vulnerabilities.
   
 ## Solutions:
 
- * 1 - [Flash Pool]([https://github.com/gusgraujo/Security-Solidity-Solutions/tree/master/src/src-default/flashpool](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/flashpool/FlashPool.t.sol))
- * 2 - [Clueless]([https://github.com/gusgraujo/Security-Solidity-Solutions/tree/master/src/src-default/clueless](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/clueless/Clueless.t.sol))
- * 3 - [Free]([https://github.com/gusgraujo/Security-Solidity-Solutions/tree/master/src/src-default/free](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/free/Free.t.sol))
- * 4 - [Flash Bank]([https://github.com/gusgraujo/Security-Solidity-Solutions/tree/master/src/src-default/flash-bank](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/flash-bank/FlashBank.t.sol))
+ * 1 - [Flash Pool](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/flashpool/FlashPool.t.sol)
+ * 2 - [Clueless](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/clueless/Clueless.t.sol)
+ * 3 - [Free](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/free/Free.t.sol)
+ * 4 - [Flash Bank](https://github.com/gusgraujo/Security-Solidity-Solutions/blob/master/test/flash-bank/FlashBank.t.sol)
